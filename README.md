@@ -2,64 +2,101 @@
 
 Este proyecto tiene como objetivo implementar un conjunto de scripts en Python que utilizan la librería `google-genai` para realizar diversas tareas relacionadas con la inteligencia artificial, incluyendo consultas, procesamiento de textos y un sistema de chat interactivo.
 
-## Estructura del Proyecto
+---
 
-```
-google-genai-taller
-├── src
-│   ├── ejercicio1.py
-│   ├── ejercicio2.py
-│   ├── ejercicio3.py
-│   └── utils
-│       └── __init__.py
-├── requirements.txt
-└── README.md
-```
+## 📋 Requisitos Previos
 
-## Instalación
+Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:
 
-Para instalar las dependencias necesarias, asegúrate de tener `pip` instalado y ejecuta el siguiente comando en la raíz del proyecto:
+1. **Python 3.9 o superior** instalado en tu sistema.
+2. **API Key de Google Gemini** (puedes obtenerla en Google AI Studio).
+3. **Librerías necesarias instaladas** (ver sección de instalación).
 
-```
-pip install -r requirements.txt
-```
+---
 
-## Ejecución de Scripts
+## ⚙️ Instalación
 
-### Ejercicio 1: Conexión y Petición Básica
+Sigue estos pasos para configurar el entorno y preparar el proyecto:
 
-Este script inicializa el cliente de Gemini y realiza una consulta simple para explicar qué es la "Inferencia en IA" en menos de 50 palabras. Para ejecutarlo, utiliza el siguiente comando:
+1. **Clona el repositorio**:
+   ```bashs
+   git clone https://github.com/Vivi271/ACTIVIDAD_CHAT.git
+   cd ACTIVIDAD_CHAT
+   ```
 
-```
-python src/ejercicio1.py
-```
+2. **Crea un entorno virtual** (opcional, pero recomendado):
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # En Linux/Mac
+   env\Scripts\activate     # En Windows
+   ```
 
-### Ejercicio 2: Procesador de Textos Inteligente
+3. **Instala las dependencias**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Este script contiene la función `procesar_articulo(texto, tarea)` que permite resumir un texto o editarlo para que suene más formal y técnico. Para ejecutarlo, utiliza el siguiente comando:
+4. **Configura tu API Key**:
+   - Crea un archivo llamado `.env` en la raíz del proyecto.
+   - Dentro del archivo `.env`, agrega tu clave de API:
+     ```
+     GEMINI_API_KEY=tu_clave_api_aqui
+     ```
 
-```
-python src/ejercicio2.py
-```
+---
 
-### Ejercicio 3: Chat de Soporte con Historial
+## 🚀 Ejecución de Scripts
 
-Este script implementa un sistema de chat para una tienda de tecnología, donde la IA actúa como un vendedor amable. Permite al usuario interactuar hasta que escriba "finalizar". Para ejecutarlo, utiliza el siguiente comando:
+### **Ejercicio 1: Conexión y Petición Básica**
+- **Descripción**: Este script inicializa el cliente de Gemini y realiza una consulta simple para explicar qué es la "Inferencia en IA" en menos de 50 palabras.
+- **Ejecución**:
+   ```bash
+   python src/ejercicio1.py
+   ```
 
-```
-python src/ejercicio3.py
-```
+---
 
-## Ejemplos de Uso
+### **Ejercicio 2: Procesador de Textos Inteligente**
+- **Descripción**: Este script contiene la función `procesar_articulo(texto, tarea)` que permite:
+  - Resumir un texto.
+  - Editar un texto para que suene más formal y técnico.
+- **Ejecución**:
+   ```bash
+   python src/ejercicio2.py
+   ```
 
-- **Ejercicio 1**: Al ejecutar el script, se espera recibir una breve explicación sobre la inferencia en IA.
-- **Ejercicio 2**: Al proporcionar un texto y la tarea de "resumir", se obtendrá un resumen ejecutivo.
-- **Ejercicio 3**: El usuario puede hacer preguntas sobre productos y recibir respuestas detalladas hasta que decida finalizar la conversación.
+---
 
-## Contribuciones
+### **Ejercicio 3: Chat de Soporte con Historial**
+- **Descripción**: Este script implementa un sistema de chat para una tienda de tecnología, donde la IA actúa como un vendedor amable. Permite al usuario interactuar hasta que escriba "finalizar".
+- **Ejecución**:
+   ```bash
+   python src/ejercicio3.py
+   ```
 
-Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request con tus mejoras o correcciones.
+---
 
-## Licencia
+## 🛠️ Solución de Problemas Comunes
+
+- **Error de API Key**: Asegúrate de que el archivo `.env` esté bien escrito y que la variable se llame `GEMINI_API_KEY`.
+- **ModuleNotFoundError**: Verifica que activaste el entorno virtual y ejecutaste `pip install -r requirements.txt`.
+- **Error al procesar la solicitud**: Revisa tu conexión a internet y asegúrate de que tu API Key sea válida.
+
+---
+
+## 📜 Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
+---
+
+## 📷 Capturas de Pantalla
+
+### Ejercicio 1: Conexión y Petición Básica
+![Ejercicio 1](./images/Actividad1.png)
+
+### Ejercicio 2: Procesador de Textos Inteligente
+![Ejercicio 2](./images/Actividad2.png)
+
+### Ejercicio 3: Chat de Soporte con Historial
+![Ejercicio 3](./images/Actividad3.png)
