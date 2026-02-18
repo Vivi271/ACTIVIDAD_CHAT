@@ -93,10 +93,12 @@ Este proyecto está bajo la Licencia MIT.
 ## 📷 Capturas de Pantalla
 
 ### Ejercicio 1: Conexión y Petición Básica
-![Ejercicio 1](./images/Actividad1.png)
+<img width="1792" height="1120" alt="Actividad1" src="https://github.com/user-attachments/assets/8f131c10-e71a-4ee5-add4-0c48cd739e0c" />
+
 
 ### Ejercicio 2: Procesador de Textos Inteligente
-![Ejercicio 2](./images/Actividad2.png)
+<img width="1792" height="1116" alt="Actividad2" src="https://github.com/user-attachments/assets/cfb98b9b-5f26-46ca-8556-0c19f3940cd1" />
+
 
 ### Ejercicio 3: Chat de Soporte con Historial
-![Ejercicio 3](./images/Actividad3.png)
+<img width="1790" height="1120" alt="Actividad3" src="https://github.com/user-attachments/assets/57c4ea11-286e-4745-83d2-2c5455a0ef6b" />
